@@ -1,0 +1,12 @@
+//
+//  Coordinate.swift
+//  DimicMilosCodingChallenge
+//
+//  Created by Dimic Milos on 8/24/19.
+//  Copyright © 2019 Dimic Milos. All rights reserved.
+//
+
+struct Coordinate: Decodable {
+    let latitude: Double
+    let longitude: Double
+}

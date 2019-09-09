@@ -1,0 +1,962 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E941B92123103F2E00522C58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B92023103F2E00522C58 /* AppDelegate.swift */; };
+		E941B92623103F2E00522C58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E941B92423103F2E00522C58 /* Main.storyboard */; };
+		E941B92823103F3000522C58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E941B92723103F3000522C58 /* Assets.xcassets */; };
+		E941B92B23103F3000522C58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E941B92923103F3000522C58 /* LaunchScreen.storyboard */; };
+		E941B9462310421500522C58 /* NearbyVehiclesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B9442310421500522C58 /* NearbyVehiclesListViewController.swift */; };
+		E941B9472310421500522C58 /* NearbyVehiclesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E941B9452310421500522C58 /* NearbyVehiclesListViewController.xib */; };
+		E941B94B2310441B00522C58 /* Coordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B94A2310441B00522C58 /* Coordinating.swift */; };
+		E941B94E2310444300522C58 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B94D2310444300522C58 /* Coordinator.swift */; };
+		E941B951231044B600522C58 /* UIWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B950231044B600522C58 /* UIWindow+Extensions.swift */; };
+		E941B953231044D000522C58 /* OSLog+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B952231044D000522C58 /* OSLog+Extensions.swift */; };
+		E941B9552310450800522C58 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B9542310450800522C58 /* NavigationCoordinator.swift */; };
+		E941B9572310452F00522C58 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B9562310452F00522C58 /* ApplicationCoordinator.swift */; };
+		E941B959231045C900522C58 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B958231045C900522C58 /* MainNavigationController.swift */; };
+		E941B95B2310463100522C58 /* ListFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B95A2310463100522C58 /* ListFlowCoordinator.swift */; };
+		E941B95E2310475500522C58 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B95D2310475500522C58 /* NetworkingService.swift */; };
+		E941B961231049D900522C58 /* ParserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B960231049D900522C58 /* ParserService.swift */; };
+		E941B96523104D0D00522C58 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B96423104D0D00522C58 /* Vehicle.swift */; };
+		E941B96B23105E1600522C58 /* PointsOfInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B96A23105E1600522C58 /* PointsOfInterest.swift */; };
+		E941B96F23105F8300522C58 /* VehicleMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B96E23105F8300522C58 /* VehicleMapViewModel.swift */; };
+		E941B9722310608F00522C58 /* VehicleDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B9712310608F00522C58 /* VehicleDirection.swift */; };
+		E941B974231062B400522C58 /* Fleet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B973231062B400522C58 /* Fleet.swift */; };
+		E941B979231064D800522C58 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B978231064D800522C58 /* Image.swift */; };
+		E941B97C2310683D00522C58 /* Bounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B97B2310683D00522C58 /* Bounds.swift */; };
+		E941B97F23106C8600522C58 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B97E23106C8600522C58 /* Constants.swift */; };
+		E941B9842310967600522C58 /* DetailVehicleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B9822310967600522C58 /* DetailVehicleTableViewCell.swift */; };
+		E941B9852310967600522C58 /* DetailVehicleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E941B9832310967600522C58 /* DetailVehicleTableViewCell.xib */; };
+		E941B987231097E900522C58 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B986231097E900522C58 /* UITableViewCell+Extensions.swift */; };
+		E941B9892310988800522C58 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B9882310988800522C58 /* UIView+Extensions.swift */; };
+		E941B98C23109ECE00522C58 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941B98B23109ECE00522C58 /* Coordinate.swift */; };
+		E9C1E3E323113AD7006A9F74 /* FlowPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1E3E123113AD7006A9F74 /* FlowPickerViewController.swift */; };
+		E9C1E3E423113AD7006A9F74 /* FlowPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9C1E3E223113AD7006A9F74 /* FlowPickerViewController.xib */; };
+		E9C1E3E723113CED006A9F74 /* FlowPickerViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1E3E623113CED006A9F74 /* FlowPickerViewControllerDelegate.swift */; };
+		E9C1E3EB23114293006A9F74 /* VehiclesMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1E3E923114293006A9F74 /* VehiclesMapViewController.swift */; };
+		E9C1E3EC23114293006A9F74 /* VehiclesMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9C1E3EA23114293006A9F74 /* VehiclesMapViewController.xib */; };
+		E9C1E3EE23114349006A9F74 /* MapFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1E3ED23114349006A9F74 /* MapFlowCoordinator.swift */; };
+		E9C1E3F023115E69006A9F74 /* NearbyVehiclesListViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1E3EF23115E69006A9F74 /* NearbyVehiclesListViewControllerDelegate.swift */; };
+		E9C1E3F223115FC5006A9F74 /* ListFlowCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1E3F123115FC5006A9F74 /* ListFlowCoordinatorDelegate.swift */; };
+		E9C1E3F42311A1F9006A9F74 /* MKCoordinateRegion+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1E3F32311A1F9006A9F74 /* MKCoordinateRegion+Extensions.swift */; };
+		E9C1E3F62311BFF0006A9F74 /* MKMapView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1E3F52311BFF0006A9F74 /* MKMapView+Extensions.swift */; };
+		E9C1E3F82311C0AD006A9F74 /* VehiclesMapViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1E3F72311C0AD006A9F74 /* VehiclesMapViewControllerDelegate.swift */; };
+		E9C1E3FA2311D053006A9F74 /* MapFlowCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1E3F92311D053006A9F74 /* MapFlowCoordinatorDelegate.swift */; };
+		E9C1E3FE2311ED8D006A9F74 /* FilterPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1E3FD2311ED8D006A9F74 /* FilterPickerView.swift */; };
+		E9C1E4022311F13D006A9F74 /* FilterPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9C1E4012311F13C006A9F74 /* FilterPickerView.xib */; };
+		E9C1E4042311F51B006A9F74 /* FilterPickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1E4032311F51B006A9F74 /* FilterPickerViewDelegate.swift */; };
+		E9C1E40623126D3D006A9F74 /* VehiclesUpdatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1E40523126D3D006A9F74 /* VehiclesUpdatable.swift */; };
+		E9C1E40823127186006A9F74 /* VehiclePresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1E40723127186006A9F74 /* VehiclePresentable.swift */; };
+		E9C1E40B2312735A006A9F74 /* Vehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1E40A2312735A006A9F74 /* Vehicles.swift */; };
+		E9C1E4112312988B006A9F74 /* VehicleMapViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1E4102312988B006A9F74 /* VehicleMapViewModelTests.swift */; };
+		E9C1E4152312ABEC006A9F74 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1E4142312ABEC006A9F74 /* Extensions.swift */; };
+		E9C1E4192312AFC1006A9F74 /* NearbyVehiclesListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1E4182312AFC1006A9F74 /* NearbyVehiclesListViewControllerTests.swift */; };
+		E9C1E41C2312CD91006A9F74 /* ApplicationCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1E41B2312CD91006A9F74 /* ApplicationCoordinatorTests.swift */; };
+		E9C1E41E2312D920006A9F74 /* VehicleObtainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1E41D2312D920006A9F74 /* VehicleObtainable.swift */; };
+		E9C1E4212312D96D006A9F74 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1E4202312D96D006A9F74 /* Misc.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E941B93223103F3000522C58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E941B91523103F2E00522C58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E941B91C23103F2E00522C58;
+			remoteInfo = DimicMilosCodingChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E941B91D23103F2E00522C58 /* DimicMilosCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DimicMilosCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E941B92023103F2E00522C58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E941B92523103F2E00522C58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E941B92723103F3000522C58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E941B92A23103F3000522C58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E941B92C23103F3000522C58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E941B93123103F3000522C58 /* DimicMilosCodingChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DimicMilosCodingChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E941B93723103F3000522C58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E941B9442310421500522C58 /* NearbyVehiclesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyVehiclesListViewController.swift; sourceTree = "<group>"; };
+		E941B9452310421500522C58 /* NearbyVehiclesListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NearbyVehiclesListViewController.xib; sourceTree = "<group>"; };
+		E941B94A2310441B00522C58 /* Coordinating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinating.swift; sourceTree = "<group>"; };
+		E941B94D2310444300522C58 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E941B950231044B600522C58 /* UIWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extensions.swift"; sourceTree = "<group>"; };
+		E941B952231044D000522C58 /* OSLog+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSLog+Extensions.swift"; sourceTree = "<group>"; };
+		E941B9542310450800522C58 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		E941B9562310452F00522C58 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		E941B958231045C900522C58 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		E941B95A2310463100522C58 /* ListFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFlowCoordinator.swift; sourceTree = "<group>"; };
+		E941B95D2310475500522C58 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		E941B960231049D900522C58 /* ParserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserService.swift; sourceTree = "<group>"; };
+		E941B96423104D0D00522C58 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		E941B96A23105E1600522C58 /* PointsOfInterest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsOfInterest.swift; sourceTree = "<group>"; };
+		E941B96E23105F8300522C58 /* VehicleMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMapViewModel.swift; sourceTree = "<group>"; };
+		E941B9712310608F00522C58 /* VehicleDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDirection.swift; sourceTree = "<group>"; };
+		E941B973231062B400522C58 /* Fleet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fleet.swift; sourceTree = "<group>"; };
+		E941B978231064D800522C58 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		E941B97B2310683D00522C58 /* Bounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bounds.swift; sourceTree = "<group>"; };
+		E941B97E23106C8600522C58 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E941B9822310967600522C58 /* DetailVehicleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVehicleTableViewCell.swift; sourceTree = "<group>"; };
+		E941B9832310967600522C58 /* DetailVehicleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailVehicleTableViewCell.xib; sourceTree = "<group>"; };
+		E941B986231097E900522C58 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		E941B9882310988800522C58 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		E941B98B23109ECE00522C58 /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		E9C1E3E123113AD7006A9F74 /* FlowPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowPickerViewController.swift; sourceTree = "<group>"; };
+		E9C1E3E223113AD7006A9F74 /* FlowPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlowPickerViewController.xib; sourceTree = "<group>"; };
+		E9C1E3E623113CED006A9F74 /* FlowPickerViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowPickerViewControllerDelegate.swift; sourceTree = "<group>"; };
+		E9C1E3E923114293006A9F74 /* VehiclesMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesMapViewController.swift; sourceTree = "<group>"; };
+		E9C1E3EA23114293006A9F74 /* VehiclesMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehiclesMapViewController.xib; sourceTree = "<group>"; };
+		E9C1E3ED23114349006A9F74 /* MapFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapFlowCoordinator.swift; sourceTree = "<group>"; };
+		E9C1E3EF23115E69006A9F74 /* NearbyVehiclesListViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyVehiclesListViewControllerDelegate.swift; sourceTree = "<group>"; };
+		E9C1E3F123115FC5006A9F74 /* ListFlowCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFlowCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		E9C1E3F32311A1F9006A9F74 /* MKCoordinateRegion+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKCoordinateRegion+Extensions.swift"; sourceTree = "<group>"; };
+		E9C1E3F52311BFF0006A9F74 /* MKMapView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Extensions.swift"; sourceTree = "<group>"; };
+		E9C1E3F72311C0AD006A9F74 /* VehiclesMapViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesMapViewControllerDelegate.swift; sourceTree = "<group>"; };
+		E9C1E3F92311D053006A9F74 /* MapFlowCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapFlowCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		E9C1E3FD2311ED8D006A9F74 /* FilterPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPickerView.swift; sourceTree = "<group>"; };
+		E9C1E4012311F13C006A9F74 /* FilterPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterPickerView.xib; sourceTree = "<group>"; };
+		E9C1E4032311F51B006A9F74 /* FilterPickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPickerViewDelegate.swift; sourceTree = "<group>"; };
+		E9C1E40523126D3D006A9F74 /* VehiclesUpdatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesUpdatable.swift; sourceTree = "<group>"; };
+		E9C1E40723127186006A9F74 /* VehiclePresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclePresentable.swift; sourceTree = "<group>"; };
+		E9C1E40A2312735A006A9F74 /* Vehicles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicles.swift; sourceTree = "<group>"; };
+		E9C1E4102312988B006A9F74 /* VehicleMapViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMapViewModelTests.swift; sourceTree = "<group>"; };
+		E9C1E4142312ABEC006A9F74 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E9C1E4182312AFC1006A9F74 /* NearbyVehiclesListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyVehiclesListViewControllerTests.swift; sourceTree = "<group>"; };
+		E9C1E41B2312CD91006A9F74 /* ApplicationCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinatorTests.swift; sourceTree = "<group>"; };
+		E9C1E41D2312D920006A9F74 /* VehicleObtainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleObtainable.swift; sourceTree = "<group>"; };
+		E9C1E4202312D96D006A9F74 /* Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E941B91A23103F2E00522C58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E941B92E23103F3000522C58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E941B91423103F2E00522C58 = {
+			isa = PBXGroup;
+			children = (
+				E941B92723103F3000522C58 /* Assets.xcassets */,
+				E941B91F23103F2E00522C58 /* DimicMilosCodingChallenge */,
+				E941B93423103F3000522C58 /* DimicMilosCodingChallengeTests */,
+				E941B91E23103F2E00522C58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E941B91E23103F2E00522C58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E941B91D23103F2E00522C58 /* DimicMilosCodingChallenge.app */,
+				E941B93123103F3000522C58 /* DimicMilosCodingChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E941B91F23103F2E00522C58 /* DimicMilosCodingChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				E941B9412310405600522C58 /* Application */,
+				E941B95C2310474B00522C58 /* NetworkingService */,
+				E941B95F231049D000522C58 /* ParserService */,
+				E941B942231040AA00522C58 /* Storyboards */,
+				E941B94F231044A700522C58 /* Extensions */,
+				E941B948231043F000522C58 /* Coordinators */,
+				E9C1E3E523113CD6006A9F74 /* Protocols */,
+				E941B96223104CDF00522C58 /* Models */,
+				E9C1E3FB2311ED54006A9F74 /* Views */,
+				E941B96D23105F6B00522C58 /* ViewModels */,
+				E941B9402310402100522C58 /* ViewControllers */,
+				E941B980231095B800522C58 /* TableViewCells */,
+				E941B9752310649200522C58 /* SupportingFiles */,
+			);
+			path = DimicMilosCodingChallenge;
+			sourceTree = "<group>";
+		};
+		E941B93423103F3000522C58 /* DimicMilosCodingChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9C1E41A2312CD16006A9F74 /* Coordinators */,
+				E9C1E40E23129866006A9F74 /* ViewModels */,
+				E9C1E4162312AFA3006A9F74 /* ViewControllers */,
+				E9C1E4132312ABAF006A9F74 /* Extensions */,
+				E941B93723103F3000522C58 /* Info.plist */,
+			);
+			path = DimicMilosCodingChallengeTests;
+			sourceTree = "<group>";
+		};
+		E941B9402310402100522C58 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E9C1E3E023113AB4006A9F74 /* FlowPickerViewController */,
+				E941B943231041E600522C58 /* NearbyVehiclesListViewController */,
+				E9C1E3E823114272006A9F74 /* VehiclesMapViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E941B9412310405600522C58 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E941B92023103F2E00522C58 /* AppDelegate.swift */,
+				E941B92C23103F3000522C58 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E941B942231040AA00522C58 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E941B92423103F2E00522C58 /* Main.storyboard */,
+				E941B92923103F3000522C58 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E941B943231041E600522C58 /* NearbyVehiclesListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E941B9442310421500522C58 /* NearbyVehiclesListViewController.swift */,
+				E941B9452310421500522C58 /* NearbyVehiclesListViewController.xib */,
+			);
+			path = NearbyVehiclesListViewController;
+			sourceTree = "<group>";
+		};
+		E941B948231043F000522C58 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				E941B949231043FE00522C58 /* Coordinator Setup */,
+				E941B9562310452F00522C58 /* ApplicationCoordinator.swift */,
+				E941B95A2310463100522C58 /* ListFlowCoordinator.swift */,
+				E9C1E3ED23114349006A9F74 /* MapFlowCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		E941B949231043FE00522C58 /* Coordinator Setup */ = {
+			isa = PBXGroup;
+			children = (
+				E941B94A2310441B00522C58 /* Coordinating.swift */,
+				E941B94D2310444300522C58 /* Coordinator.swift */,
+				E941B9542310450800522C58 /* NavigationCoordinator.swift */,
+				E941B958231045C900522C58 /* MainNavigationController.swift */,
+			);
+			path = "Coordinator Setup";
+			sourceTree = "<group>";
+		};
+		E941B94F231044A700522C58 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E941B952231044D000522C58 /* OSLog+Extensions.swift */,
+				E941B950231044B600522C58 /* UIWindow+Extensions.swift */,
+				E941B9882310988800522C58 /* UIView+Extensions.swift */,
+				E941B986231097E900522C58 /* UITableViewCell+Extensions.swift */,
+				E9C1E3F32311A1F9006A9F74 /* MKCoordinateRegion+Extensions.swift */,
+				E9C1E3F52311BFF0006A9F74 /* MKMapView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E941B95C2310474B00522C58 /* NetworkingService */ = {
+			isa = PBXGroup;
+			children = (
+				E941B95D2310475500522C58 /* NetworkingService.swift */,
+			);
+			path = NetworkingService;
+			sourceTree = "<group>";
+		};
+		E941B95F231049D000522C58 /* ParserService */ = {
+			isa = PBXGroup;
+			children = (
+				E941B960231049D900522C58 /* ParserService.swift */,
+			);
+			path = ParserService;
+			sourceTree = "<group>";
+		};
+		E941B96223104CDF00522C58 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E941B96923105DF600522C58 /* PointsOfInterest */,
+				E941B96323104CE900522C58 /* Vehicle */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E941B96323104CE900522C58 /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				E941B96423104D0D00522C58 /* Vehicle.swift */,
+			);
+			path = Vehicle;
+			sourceTree = "<group>";
+		};
+		E941B96923105DF600522C58 /* PointsOfInterest */ = {
+			isa = PBXGroup;
+			children = (
+				E941B96A23105E1600522C58 /* PointsOfInterest.swift */,
+			);
+			path = PointsOfInterest;
+			sourceTree = "<group>";
+		};
+		E941B96C23105F5F00522C58 /* VehicleViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E941B96E23105F8300522C58 /* VehicleMapViewModel.swift */,
+			);
+			path = VehicleViewModel;
+			sourceTree = "<group>";
+		};
+		E941B96D23105F6B00522C58 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E941B96C23105F5F00522C58 /* VehicleViewModel */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E941B9702310607900522C58 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				E941B973231062B400522C58 /* Fleet.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		E941B9752310649200522C58 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E941B9702310607900522C58 /* Enums */,
+				E9C1E3DF2310B60D006A9F74 /* VehicleDirection */,
+				E941B97D23106C5800522C58 /* Constants */,
+				E9C1E40923127345006A9F74 /* Vehicles */,
+				E941B98A23109EC300522C58 /* Coordinate */,
+				E941B97A2310683200522C58 /* Bounds */,
+				E941B977231064C900522C58 /* Image */,
+				E9C1E41F2312D959006A9F74 /* Misc */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E941B977231064C900522C58 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				E941B978231064D800522C58 /* Image.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		E941B97A2310683200522C58 /* Bounds */ = {
+			isa = PBXGroup;
+			children = (
+				E941B97B2310683D00522C58 /* Bounds.swift */,
+			);
+			path = Bounds;
+			sourceTree = "<group>";
+		};
+		E941B97D23106C5800522C58 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E941B97E23106C8600522C58 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		E941B980231095B800522C58 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				E941B981231095C700522C58 /* DetailVehicleTableViewCell */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		E941B981231095C700522C58 /* DetailVehicleTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E941B9822310967600522C58 /* DetailVehicleTableViewCell.swift */,
+				E941B9832310967600522C58 /* DetailVehicleTableViewCell.xib */,
+			);
+			path = DetailVehicleTableViewCell;
+			sourceTree = "<group>";
+		};
+		E941B98A23109EC300522C58 /* Coordinate */ = {
+			isa = PBXGroup;
+			children = (
+				E941B98B23109ECE00522C58 /* Coordinate.swift */,
+			);
+			path = Coordinate;
+			sourceTree = "<group>";
+		};
+		E9C1E3DF2310B60D006A9F74 /* VehicleDirection */ = {
+			isa = PBXGroup;
+			children = (
+				E941B9712310608F00522C58 /* VehicleDirection.swift */,
+			);
+			path = VehicleDirection;
+			sourceTree = "<group>";
+		};
+		E9C1E3E023113AB4006A9F74 /* FlowPickerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9C1E3E123113AD7006A9F74 /* FlowPickerViewController.swift */,
+				E9C1E3E223113AD7006A9F74 /* FlowPickerViewController.xib */,
+			);
+			path = FlowPickerViewController;
+			sourceTree = "<group>";
+		};
+		E9C1E3E523113CD6006A9F74 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E9C1E40D23127461006A9F74 /* Coordinators */,
+				E9C1E40C23127438006A9F74 /* ViewControllors */,
+				E9C1E40723127186006A9F74 /* VehiclePresentable.swift */,
+				E9C1E40523126D3D006A9F74 /* VehiclesUpdatable.swift */,
+				E9C1E4032311F51B006A9F74 /* FilterPickerViewDelegate.swift */,
+				E9C1E41D2312D920006A9F74 /* VehicleObtainable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E9C1E3E823114272006A9F74 /* VehiclesMapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9C1E3E923114293006A9F74 /* VehiclesMapViewController.swift */,
+				E9C1E3EA23114293006A9F74 /* VehiclesMapViewController.xib */,
+			);
+			path = VehiclesMapViewController;
+			sourceTree = "<group>";
+		};
+		E9C1E3FB2311ED54006A9F74 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9C1E3FC2311ED5C006A9F74 /* FilterPickerView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E9C1E3FC2311ED5C006A9F74 /* FilterPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				E9C1E3FD2311ED8D006A9F74 /* FilterPickerView.swift */,
+				E9C1E4012311F13C006A9F74 /* FilterPickerView.xib */,
+			);
+			path = FilterPickerView;
+			sourceTree = "<group>";
+		};
+		E9C1E40923127345006A9F74 /* Vehicles */ = {
+			isa = PBXGroup;
+			children = (
+				E9C1E40A2312735A006A9F74 /* Vehicles.swift */,
+			);
+			path = Vehicles;
+			sourceTree = "<group>";
+		};
+		E9C1E40C23127438006A9F74 /* ViewControllors */ = {
+			isa = PBXGroup;
+			children = (
+				E9C1E3E623113CED006A9F74 /* FlowPickerViewControllerDelegate.swift */,
+				E9C1E3EF23115E69006A9F74 /* NearbyVehiclesListViewControllerDelegate.swift */,
+				E9C1E3F72311C0AD006A9F74 /* VehiclesMapViewControllerDelegate.swift */,
+			);
+			path = ViewControllors;
+			sourceTree = "<group>";
+		};
+		E9C1E40D23127461006A9F74 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				E9C1E3F123115FC5006A9F74 /* ListFlowCoordinatorDelegate.swift */,
+				E9C1E3F92311D053006A9F74 /* MapFlowCoordinatorDelegate.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		E9C1E40E23129866006A9F74 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E9C1E40F23129871006A9F74 /* VehicleMapViewModel */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E9C1E40F23129871006A9F74 /* VehicleMapViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E9C1E4102312988B006A9F74 /* VehicleMapViewModelTests.swift */,
+			);
+			path = VehicleMapViewModel;
+			sourceTree = "<group>";
+		};
+		E9C1E4132312ABAF006A9F74 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E9C1E4142312ABEC006A9F74 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E9C1E4162312AFA3006A9F74 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E9C1E4172312AFB0006A9F74 /* NearbyVehiclesListViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E9C1E4172312AFB0006A9F74 /* NearbyVehiclesListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9C1E4182312AFC1006A9F74 /* NearbyVehiclesListViewControllerTests.swift */,
+			);
+			path = NearbyVehiclesListViewController;
+			sourceTree = "<group>";
+		};
+		E9C1E41A2312CD16006A9F74 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				E9C1E41B2312CD91006A9F74 /* ApplicationCoordinatorTests.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		E9C1E41F2312D959006A9F74 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				E9C1E4202312D96D006A9F74 /* Misc.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E941B91C23103F2E00522C58 /* DimicMilosCodingChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E941B93A23103F3000522C58 /* Build configuration list for PBXNativeTarget "DimicMilosCodingChallenge" */;
+			buildPhases = (
+				E941B91923103F2E00522C58 /* Sources */,
+				E941B91A23103F2E00522C58 /* Frameworks */,
+				E941B91B23103F2E00522C58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DimicMilosCodingChallenge;
+			productName = DimicMilosCodingChallenge;
+			productReference = E941B91D23103F2E00522C58 /* DimicMilosCodingChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E941B93023103F3000522C58 /* DimicMilosCodingChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E941B93D23103F3000522C58 /* Build configuration list for PBXNativeTarget "DimicMilosCodingChallengeTests" */;
+			buildPhases = (
+				E941B92D23103F3000522C58 /* Sources */,
+				E941B92E23103F3000522C58 /* Frameworks */,
+				E941B92F23103F3000522C58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E941B93323103F3000522C58 /* PBXTargetDependency */,
+			);
+			name = DimicMilosCodingChallengeTests;
+			productName = DimicMilosCodingChallengeTests;
+			productReference = E941B93123103F3000522C58 /* DimicMilosCodingChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E941B91523103F2E00522C58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Dimic Milos";
+				TargetAttributes = {
+					E941B91C23103F2E00522C58 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					E941B93023103F3000522C58 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = E941B91C23103F2E00522C58;
+					};
+				};
+			};
+			buildConfigurationList = E941B91823103F2E00522C58 /* Build configuration list for PBXProject "DimicMilosCodingChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E941B91423103F2E00522C58;
+			productRefGroup = E941B91E23103F2E00522C58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E941B91C23103F2E00522C58 /* DimicMilosCodingChallenge */,
+				E941B93023103F3000522C58 /* DimicMilosCodingChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E941B91B23103F2E00522C58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C1E3E423113AD7006A9F74 /* FlowPickerViewController.xib in Resources */,
+				E941B92B23103F3000522C58 /* LaunchScreen.storyboard in Resources */,
+				E941B92823103F3000522C58 /* Assets.xcassets in Resources */,
+				E941B9472310421500522C58 /* NearbyVehiclesListViewController.xib in Resources */,
+				E9C1E3EC23114293006A9F74 /* VehiclesMapViewController.xib in Resources */,
+				E941B92623103F2E00522C58 /* Main.storyboard in Resources */,
+				E9C1E4022311F13D006A9F74 /* FilterPickerView.xib in Resources */,
+				E941B9852310967600522C58 /* DetailVehicleTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E941B92F23103F3000522C58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E941B91923103F2E00522C58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E941B96523104D0D00522C58 /* Vehicle.swift in Sources */,
+				E9C1E3F62311BFF0006A9F74 /* MKMapView+Extensions.swift in Sources */,
+				E941B987231097E900522C58 /* UITableViewCell+Extensions.swift in Sources */,
+				E941B959231045C900522C58 /* MainNavigationController.swift in Sources */,
+				E941B94E2310444300522C58 /* Coordinator.swift in Sources */,
+				E941B951231044B600522C58 /* UIWindow+Extensions.swift in Sources */,
+				E9C1E3E723113CED006A9F74 /* FlowPickerViewControllerDelegate.swift in Sources */,
+				E941B974231062B400522C58 /* Fleet.swift in Sources */,
+				E941B9892310988800522C58 /* UIView+Extensions.swift in Sources */,
+				E9C1E3F223115FC5006A9F74 /* ListFlowCoordinatorDelegate.swift in Sources */,
+				E941B95B2310463100522C58 /* ListFlowCoordinator.swift in Sources */,
+				E9C1E3F023115E69006A9F74 /* NearbyVehiclesListViewControllerDelegate.swift in Sources */,
+				E9C1E3FE2311ED8D006A9F74 /* FilterPickerView.swift in Sources */,
+				E941B97C2310683D00522C58 /* Bounds.swift in Sources */,
+				E9C1E3F82311C0AD006A9F74 /* VehiclesMapViewControllerDelegate.swift in Sources */,
+				E941B9462310421500522C58 /* NearbyVehiclesListViewController.swift in Sources */,
+				E941B96B23105E1600522C58 /* PointsOfInterest.swift in Sources */,
+				E9C1E3FA2311D053006A9F74 /* MapFlowCoordinatorDelegate.swift in Sources */,
+				E941B9722310608F00522C58 /* VehicleDirection.swift in Sources */,
+				E9C1E3EE23114349006A9F74 /* MapFlowCoordinator.swift in Sources */,
+				E9C1E3EB23114293006A9F74 /* VehiclesMapViewController.swift in Sources */,
+				E941B94B2310441B00522C58 /* Coordinating.swift in Sources */,
+				E941B97F23106C8600522C58 /* Constants.swift in Sources */,
+				E941B953231044D000522C58 /* OSLog+Extensions.swift in Sources */,
+				E941B92123103F2E00522C58 /* AppDelegate.swift in Sources */,
+				E9C1E3E323113AD7006A9F74 /* FlowPickerViewController.swift in Sources */,
+				E9C1E4212312D96D006A9F74 /* Misc.swift in Sources */,
+				E9C1E40823127186006A9F74 /* VehiclePresentable.swift in Sources */,
+				E941B979231064D800522C58 /* Image.swift in Sources */,
+				E9C1E4042311F51B006A9F74 /* FilterPickerViewDelegate.swift in Sources */,
+				E941B961231049D900522C58 /* ParserService.swift in Sources */,
+				E941B98C23109ECE00522C58 /* Coordinate.swift in Sources */,
+				E941B95E2310475500522C58 /* NetworkingService.swift in Sources */,
+				E941B9842310967600522C58 /* DetailVehicleTableViewCell.swift in Sources */,
+				E9C1E3F42311A1F9006A9F74 /* MKCoordinateRegion+Extensions.swift in Sources */,
+				E941B96F23105F8300522C58 /* VehicleMapViewModel.swift in Sources */,
+				E9C1E41E2312D920006A9F74 /* VehicleObtainable.swift in Sources */,
+				E9C1E40623126D3D006A9F74 /* VehiclesUpdatable.swift in Sources */,
+				E941B9552310450800522C58 /* NavigationCoordinator.swift in Sources */,
+				E941B9572310452F00522C58 /* ApplicationCoordinator.swift in Sources */,
+				E9C1E40B2312735A006A9F74 /* Vehicles.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E941B92D23103F3000522C58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C1E4192312AFC1006A9F74 /* NearbyVehiclesListViewControllerTests.swift in Sources */,
+				E9C1E41C2312CD91006A9F74 /* ApplicationCoordinatorTests.swift in Sources */,
+				E9C1E4112312988B006A9F74 /* VehicleMapViewModelTests.swift in Sources */,
+				E9C1E4152312ABEC006A9F74 /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E941B93323103F3000522C58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E941B91C23103F2E00522C58 /* DimicMilosCodingChallenge */;
+			targetProxy = E941B93223103F3000522C58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E941B92423103F2E00522C58 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E941B92523103F2E00522C58 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E941B92923103F3000522C58 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E941B92A23103F3000522C58 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E941B93823103F3000522C58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E941B93923103F3000522C58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E941B93B23103F3000522C58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82A5QR42VN;
+				INFOPLIST_FILE = "$(SRCROOT)/DimicMilosCodingChallenge/Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kikokiko.DimicMilosCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E941B93C23103F3000522C58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82A5QR42VN;
+				INFOPLIST_FILE = "$(SRCROOT)/DimicMilosCodingChallenge/Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kikokiko.DimicMilosCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E941B93E23103F3000522C58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82A5QR42VN;
+				INFOPLIST_FILE = DimicMilosCodingChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kikokiko.DimicMilosCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DimicMilosCodingChallenge.app/DimicMilosCodingChallenge";
+			};
+			name = Debug;
+		};
+		E941B93F23103F3000522C58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82A5QR42VN;
+				INFOPLIST_FILE = DimicMilosCodingChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kikokiko.DimicMilosCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DimicMilosCodingChallenge.app/DimicMilosCodingChallenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E941B91823103F2E00522C58 /* Build configuration list for PBXProject "DimicMilosCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E941B93823103F3000522C58 /* Debug */,
+				E941B93923103F3000522C58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E941B93A23103F3000522C58 /* Build configuration list for PBXNativeTarget "DimicMilosCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E941B93B23103F3000522C58 /* Debug */,
+				E941B93C23103F3000522C58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E941B93D23103F3000522C58 /* Build configuration list for PBXNativeTarget "DimicMilosCodingChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E941B93E23103F3000522C58 /* Debug */,
+				E941B93F23103F3000522C58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E941B91523103F2E00522C58 /* Project object */;
+}

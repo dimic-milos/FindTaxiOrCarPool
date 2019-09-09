@@ -1,0 +1,12 @@
+//
+//  VehiclesMapViewControllerDelegate.swift
+//  DimicMilosCodingChallenge
+//
+//  Created by Dimic Milos on 8/24/19.
+//  Copyright © 2019 Dimic Milos. All rights reserved.
+//
+
+protocol VehiclesMapViewControllerDelegate: class {
+    func regionDidChange(toNewBounds newBounds: Bounds, newCenter: Coordinate, vehiclesMapViewController: VehiclesMapViewController)
+    func didTapShowInTheList(vehiclesMapViewModels: [VehicleMapViewModel], in vehiclesMapViewController: VehiclesMapViewController)
+}
